@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
-# (1) Generate and plot a test dataset -----------------------------------------------------------------------------
+# (1) Generate and plot a test dataset ---------------------------------------------------------------------------------
 
 # (a) producing a dataset
 X, y = datasets.make_classification(n_samples = 100, n_features = 2, n_informative = 2, n_redundant = 0)
@@ -36,7 +36,7 @@ y_separation = -275 * x_separation + 1475
 plt.plot(x_separation, y_separation)
 plt.show()
 
-# (2) Make a function to generate a suitable covariance matrix -----------------------------------------------------
+# (2) Make a function to generate a suitable covariance matrix ----------------------------------------------------------
 
 # (a) function to generate rotated covariance matrix
 def get_cov(sdx = 1, sdy = 1, rotangdeg = 0):

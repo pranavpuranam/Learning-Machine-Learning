@@ -12,7 +12,7 @@ from sklearn.naive_bayes import GaussianNB
 
 np.random.seed(5)
 
-# (1) prior, posterior, and likelihood calculation
+# (1) prior, posterior, and likelihood calculation ---------------------------------------------------------------------
 
 # (a) defining the gaussian function
 
@@ -54,7 +54,7 @@ plt.plot(x, pw1x)
 plt.plot(x, pw2x)
 # plt.show()
 
-# (2) classification with bayes
+# (2) classification with bayes -----------------------------------------------------------------------------------------
 
 X, y = datasets.make_classification(n_samples = 1000, n_features = 2, n_informative = 2, n_redundant = 0)
 
